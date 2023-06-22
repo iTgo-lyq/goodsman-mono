@@ -1,0 +1,18 @@
+{
+  "recommendations": [
+    "ms-ceintl.vscode-language-pack-zh-hans",
+    "eamodio.gitlens",
+    "xabikos.javascriptsnippets",
+    "shd101wyy.markdown-preview-enhanced",
+    "davidanson.vscode-markdownlint",
+    "christian-kohler.path-intellisense",
+    "csstools.postcss",
+    "esbenp.prettier-vscode",
+    "simonsiefke.svg-preview",
+    "bradlc.vscode-tailwindcss",
+    "wayou.vscode-todo-highlight",
+    "henrynguyen5-vsc.vsc-nvm",
+    "formulahendry.auto-complete-tag",
+    "streetsidesoftware.code-spell-checker"
+  ]
+}

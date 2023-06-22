@@ -1,0 +1,9 @@
+[submodule "arco-design"]
+	path = arco-design
+	url = git@github.com:iTgo-lyq/arco-design.git
+[submodule "goodsman"]
+	path = goodsman
+	url = git@github.com:iTgo-lyq/goodsman.git
+[submodule "arco-pro"]
+	path = arco-pro
+	url = git@github.com:iTgo-lyq/arco-design-pro.git

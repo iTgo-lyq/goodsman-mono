@@ -1,0 +1,25 @@
+{
+  "folders": [
+    {
+      "path": "./goodsman"
+    },
+    {
+      "path": "./arco-pro"
+    },
+    {
+      "path": "./arco-design"
+    },
+    {
+      "path": "."
+    }
+  ],
+  "settings": {
+    "cSpell.words": [
+      "droplist",
+      "hoverable",
+      "Poweroff",
+      "Sider",
+      "tailwindcss"
+    ]
+  }
+}
