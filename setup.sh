@@ -28,3 +28,7 @@ cd ../goodsman
 pnpm install
 pnpm build
 pnpm start
+
+npm i -g pm2
+
+pm2 start pnpm --name goodsman -- start
