@@ -31,4 +31,6 @@ pnpm start
 
 npm i -g pm2
 
+pm2 delete goodsman
+
 pm2 start pnpm --name goodsman -- start
