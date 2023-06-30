@@ -4,9 +4,6 @@
       "path": "./goodsman"
     },
     {
-      "path": "./arco-pro"
-    },
-    {
       "path": "./arco-design"
     },
     {
@@ -18,9 +15,11 @@
       "droplist",
       "hoverable",
       "lazyload",
+      "nextjs",
       "Poweroff",
       "Sider",
-      "tailwindcss"
+      "tailwindcss",
+      "toploader"
     ]
   }
 }
