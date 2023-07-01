@@ -11,5 +11,5 @@ nvm use lts/hydrogen
 
 echo 'node version is' && node -v
 
-cd ../goodsman
-npm run start
+npm i next@13.4.5 -g
+next start

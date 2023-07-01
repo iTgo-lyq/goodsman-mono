@@ -1,6 +1,6 @@
 FROM node:18
 
-COPY . .
+COPY ./dist .
 
 EXPOSE 3000
 

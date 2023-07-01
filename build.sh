@@ -25,4 +25,7 @@ cd ../goodsman
 pnpm install
 pnpm build
 
+mkdir ../dist
+cp -r .next ../dist
 cd ../
+rm -rf ./dist/.next/cache
