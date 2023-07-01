@@ -1,8 +1,6 @@
 set -e # 遇到返回值非零退出
 set -x # 显示执行的命令
 
-git submodule update --init --recursive
-
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"

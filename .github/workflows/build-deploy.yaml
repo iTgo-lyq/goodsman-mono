@@ -3,38 +3,45 @@ on:
     branches:
       - master
   pull_request:
+    branches:
+      - master
     types:
-      - opened
-      - synchronize
-      - reopened
-      - ready_for_review
+      - closed
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
+        with:
+          submodules: true
 
       - name: Build project
         run: ./build.sh
 
       - name: Set up Docker Buildx
-        uses: docker/setup-buildx-action@v1
-
-      - name: Build and tag Docker image
-        run: |
-          docker buildx build --file Dockerfile \
-            --tag goodsman-web:latest \
-            --tag goodsman-web:${{ github.sha }} \
-            .
+        uses: docker/setup-buildx-action@v2
 
       - name: Login to Docker registry
-        uses: docker/login-action@v1
+        uses: docker/login-action@v2
         with:
           registry: registry.tgozzz.cn
           username: itgo
           password: lyq1999==
 
-      - name: Push Docker image
+      - name: Build Docker image
         run: |
-          docker push registry.tgozzz.cn/itgo/goodsman-web
+          docker build \
+          -t goodsman-web:latest \
+          -t goodsman-web:${{ github.sha }} \
+          -t itgo/goodsman-web:latest \
+          -t registry.tgozzz.cn/itgo/goodsman-web:latest \
+          -t registry.tgozzz.cn/itgo/goodsman-web:${{ github.sha }} \
+          .
+      
+      - name: Inspect Docker image
+        run: |
+          docker image inspect goodsman-web:latest
+
+      - name: Push Docker image
+        run: docker push registry.tgozzz.cn/itgo/goodsman-web:latest

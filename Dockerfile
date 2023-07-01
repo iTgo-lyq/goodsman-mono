@@ -1,8 +1,6 @@
-FROM node:<node_version>
+FROM node:18
 
 COPY . .
-
-./build.sh
 
 EXPOSE 3000
 
