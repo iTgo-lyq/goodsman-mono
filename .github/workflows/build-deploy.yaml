@@ -3,17 +3,18 @@ on:
     branches:
       - master
   pull_request:
+    branches:
+      - master
     types:
-      - opened
-      - synchronize
-      - reopened
-      - ready_for_review
+      - closed
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
+        with:
+          token: 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
 
       - name: Build project
         run: ./build.sh
