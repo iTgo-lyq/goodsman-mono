@@ -27,6 +27,7 @@ pnpm build
 
 mkdir ../dist
 cp -r .next ../dist
+cp -r public ../dist
 cd ../
 cp ./setup.sh ./dist/setup.sh
 rm -rf ./dist/.next/cache
