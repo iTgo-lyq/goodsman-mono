@@ -13,6 +13,7 @@
     "wayou.vscode-todo-highlight",
     "henrynguyen5-vsc.vsc-nvm",
     "formulahendry.auto-complete-tag",
-    "streetsidesoftware.code-spell-checker"
+    "streetsidesoftware.code-spell-checker",
+    "dsznajder.es7-react-js-snippets"
   ]
 }
