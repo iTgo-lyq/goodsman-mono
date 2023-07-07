@@ -1,6 +1,8 @@
 FROM node:18
 
-COPY ./dist .
+WORKDIR /usr/app
+
+COPY ./dist /usr/app
 
 EXPOSE 3000
 
