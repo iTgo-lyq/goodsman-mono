@@ -28,6 +28,7 @@ pnpm build
 mkdir ../dist
 cp -r .next ../dist
 cp -r public ../dist
+cp next.config.js ../dist
 cd ../
 cp ./setup.sh ./dist/setup.sh
 rm -rf ./dist/.next/cache

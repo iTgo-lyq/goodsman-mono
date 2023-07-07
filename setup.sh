@@ -11,5 +11,6 @@ nvm use lts/hydrogen
 
 echo 'node version is' && node -v
 
-npm i next@13.4.9-canary.2 -g
-next start .
+npm init -y
+npm i next@13.4.9-canary.2
+npx next start .
