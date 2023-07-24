@@ -25,6 +25,7 @@ cd ../goodsman
 pnpm install
 pnpm build
 
+rm -rf ../dist
 mkdir ../dist
 cp -r .next ../dist
 cp -r public ../dist
